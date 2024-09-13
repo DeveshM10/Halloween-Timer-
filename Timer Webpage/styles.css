@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nosifer', cursive;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Resize and center the video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the video covers the background */
+    z-index: -1; /* Place the video behind the content */
+}
+
+/* Container for timer */
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    margin-top: 20vh;
+}
+
+/* Box for the timer */
+.timer-box {
+    display: inline-block;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Shadow effect */
+    text-align: center;
+}
+
+.spooky-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px red;
+}
+
+.spooky-timer {
+    font-size: 5rem;
+    text-shadow: 2px 2px 10px red;
+}
+
+/* Button styling */
+.homepage-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff5722; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: background-color 0.3s;
+}
+
+.homepage-button:hover {
+    background-color: #e64a19; /* Darker color on hover */
+}
